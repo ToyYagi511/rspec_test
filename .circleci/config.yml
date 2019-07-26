@@ -24,5 +24,14 @@
           name: pwd
           command: pwd
        - run:
+          name: ls
+          command: ls
+       - run: cd~/rspec_test
+          name: cd~/rspec_test
+          command: cd ~/rspec_test
+       - run:
+          name: pwd
+          command: pwd
+       - run:
           name: rspec version
           command: rsepc -v
