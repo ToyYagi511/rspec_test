@@ -34,7 +34,7 @@
           command: rails -v
        - run:
           name: where rspec
-          command: where rspec
+          command: rspec -v
        - run:
           name: pwd
           command: pwd
