@@ -23,8 +23,8 @@
        - run:
           name: createDB
           command: |
-          bundle exec rake db:create RAILS_ENV=test
-          bundle exec rake db:migrate rails_env=test
+            bundle exec rake db:create RAILS_ENV=test
+            bundle exec rake db:migrate rails_env=test
           environment:
             DATABASE_URL: "postgres://postgres@localhost:5432/myapp_test"
        - run:
