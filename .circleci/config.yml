@@ -21,23 +21,5 @@
           name: bundle install
           command: bundle install
        - run:
-          name: pwd
-          command: pwd
-       - run:
-          name: ls
-          command: ls
-       - run:
-          name: ruby version
-          command: ruby -v
-       - run:
-          name: rails -version
-          command: rails -v
-       - run:
-          name: where rspec
-          command: rspec -v
-       - run:
-          name: pwd
-          command: pwd
-       - run:
           name: rspec version
-          command: rsepc -v
+          command: rspec
