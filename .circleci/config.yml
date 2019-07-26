@@ -21,5 +21,11 @@
           name: bundle install
           command: bundle install
        - run:
+          name: createDB
+          command: bundle exec rake db:create
+       - run:
+          name: migrateDB
+          command: bundle exec rake db:migrate
+       - run:
           name: rspec version
           command: rspec
