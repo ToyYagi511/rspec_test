@@ -17,3 +17,9 @@
        - run:
           name: Which bundler?
           command: bundle -v
+       - run:
+          name: bundle install
+          command: bundle install
+       - run:
+          name: rspec version
+          command: rsepc -v
