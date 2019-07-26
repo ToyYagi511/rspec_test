@@ -27,8 +27,14 @@
           name: ls
           command: ls
        - run:
-          name: cd~/rspec_test
-          command: cd ~/rspec_test
+          name: ruby version
+          command: ruby -v
+       - run:
+          name: rails -version
+          command: rails -v
+       - run:
+          name: where rspec
+          command: where rspec
        - run:
           name: pwd
           command: pwd
