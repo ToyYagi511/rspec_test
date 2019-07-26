@@ -16,4 +16,4 @@
        - checkout
        - run:
           name: Which bundler?
-          command: bundle -b
+          command: bundle -v
