@@ -22,10 +22,13 @@
           command: bundle install
        - run:
           name: createDB
-          command: bundle exec rake db:create RAILS_ENV=test
-       - run:
-          name: migrateDB
-          command: bundle exec rake db:migrate RAILS_ENV=test
+          command: |
+          bundle exec rake db:create RAILS_ENV=test
+          bundle exec rake db:migrate rails_env=test
+          environment:
+            DATABASE_URL: "postgres://postgres@localhost:5432/myapp_test"
        - run:
           name: rspec version
           command: rspec
+          environment:
+            DATABASE_URL: "postgres://postgres@localhost:5432/myapp_test"
