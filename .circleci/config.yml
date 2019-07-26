@@ -21,5 +21,8 @@
           name: bundle install
           command: bundle install
        - run:
+          name: pwd
+          command: pwd
+       - run:
           name: rspec version
           command: rsepc -v
